@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { FaPause, FaPlay, FaVolumeUp } from 'react-icons/fa';
 
-const songUrl = '/src/Music/Silent Sanctuary - Ikaw Lamang (Lyrics).mp3';
+const songUrl = new URL('../Music/Silent Sanctuary - Ikaw Lamang (Lyrics).mp3', import.meta.url).href;
 
 const MusicPlayer = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);

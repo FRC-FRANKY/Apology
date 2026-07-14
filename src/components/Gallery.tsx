@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 
 const images = [
-  '/src/Memories/memory1.jpg',
-  '/src/Memories/memory2.jpg',
-  '/src/Memories/memory3.jpg',
-  '/src/Memories/memory4.jpg',
-  '/src/Memories/memory5.jpg',
-  '/src/Memories/memory6.jpg',
+  new URL('../Memories/memory1.jpg', import.meta.url).href,
+  new URL('../Memories/memory2.jpg', import.meta.url).href,
+  new URL('../Memories/memory3.jpg', import.meta.url).href,
+  new URL('../Memories/memory4.jpg', import.meta.url).href,
+  new URL('../Memories/memory5.jpg', import.meta.url).href,
+  new URL('../Memories/memory6.jpg', import.meta.url).href,
 ];
 
 const Gallery = () => {
